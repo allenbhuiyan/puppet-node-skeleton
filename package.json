@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/davermn5/puppet-node-skeleton/issues"
   },
-  "homepage": "https://github.com/davermn5/puppet-node-skeleton"
+  "homepage": "https://github.com/davermn5/puppet-node-skeleton",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
 }
