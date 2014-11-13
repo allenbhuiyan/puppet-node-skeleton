@@ -14,6 +14,8 @@
   },
   "homepage": "https://github.com/davermn5/puppet-node-skeleton",
   "dependencies": {
-    "express": "4.10.2"
+    "angular": "1.3.2",
+    "express": "4.10.2",
+    "mongodb": "1.4.19"
   }
 }
