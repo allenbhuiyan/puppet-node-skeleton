@@ -21,11 +21,11 @@
 2. vagrant ssh
 3. cd /vagrant
 4. Optional - If you care to build your own dependencies, do so here i.e:
-- npm install mongodb --save
-- open up 'package.json' and remove the '^' from dependencies section.
-- Go to Step #6. (skip step #5)
+  4. npm install mongodb --save
+  4. open up 'package.json' and remove the '^' from dependencies section.
+  4. Go to Step #6. (skip step #5)
 5. npm install
-- creates the modules located inside the 'node_modules' folder
+  5. creates the npm modules as listed in 'dependencies' section inside the package.json file.
 6. Start node
-- node index.js
-- http://localhost:8050/ (VM: listens on port 5000)
+  6. node index.js
+  6. http://localhost:8050/ (VM: listens on port 5000)
