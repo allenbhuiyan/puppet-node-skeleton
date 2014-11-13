@@ -16,7 +16,7 @@
 - mongodb
 - cool-ascii-faces (for testing node.js)
 
-##To install the package.json npm modules:
+##Get it configured, and running:
 1. vagrant up
 2. vagrant ssh
 3. cd /vagrant
@@ -29,3 +29,10 @@
 6. Start node
   6. node index.js
   6. http://localhost:8050/ (VM: listens on port 5000)
+  
+##Deploy to Heroku (on your host machine, non-VM)
+1. heroku login
+2. heroku create
+3. git push heroku master
+4. heroku ps:scale web=1
+5. heroku open
