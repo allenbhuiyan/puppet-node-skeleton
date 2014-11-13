@@ -19,9 +19,13 @@
 ##To install the package.json npm modules:
 1. vagrant up
 2. vagrant ssh
-3. cd /vagrant && cp package.template.json package.json (creates fresh copy)
-4. npm update --save
-
-##Start node
+3. cd /vagrant
+4. Optional - If you care to build your own dependencies, do so here i.e:
+- npm install mongodb --save
+- open up 'package.json' and remove the '^' from dependencies section.
+- Go to Step #6. (skip step #5)
+5. npm install
+- creates the modules located inside the 'node_modules' folder
+6. Start node
 - node index.js
 - http://localhost:8050/ (VM: listens on port 5000)
