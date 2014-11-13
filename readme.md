@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/davermn5/puppet-node-skeleton.svg?branch=master)](https://travis-ci.org/davermn5/puppet-node-skeleton)
+[![Build Status](https://travis-ci.org/davermn5/puppet-node-skeleton.svg?branch=master)](https://travis-ci.org/davermn5/puppet-node-skeleton) - Master (stable) branch
 #Puppet Node Skeleton
 
 ##Vagrant creates Ubuntu 12.04 VM
