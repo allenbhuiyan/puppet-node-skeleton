@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/davermn5/puppet-node-skeleton",
   "dependencies": {
-    "express": "^4.10.2"
+    "express": "4.10.2"
   }
 }
