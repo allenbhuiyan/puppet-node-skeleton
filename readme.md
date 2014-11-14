@@ -36,3 +36,4 @@
 3. git push heroku master
 4. heroku ps:scale web=1
 5. heroku open
+  5. See it in action [here](https://immense-citadel-2006.herokuapp.com/)
