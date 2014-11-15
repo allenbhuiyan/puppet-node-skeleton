@@ -7,7 +7,7 @@ var cool = require('cool-ascii-faces');
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function(request, response) {
-  response.send(cool());
+  response.send(cool() + ' holla');
 });
 
 app.listen(app.get('port'), function() {
