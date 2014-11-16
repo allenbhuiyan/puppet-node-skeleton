@@ -1,7 +1,12 @@
-language: node_js  
+language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
-  - "0.8"
-  - "0.6"
-  
+- '0.11'
+- '0.10'
+- '0.8'
+- '0.6'
+deploy:
+  provider: heroku
+  api_key:
+    secure: jG6WV3MPG4hJ2BO0xjnHZO4ZsZRbEOKn4/9YV+WbfsLThsIxiN1sP2PKzpTN8p5kq/GKlORu8bauwl3wegqWWl0WPraXSTWz9pZ9yTGcBP8ipV7jgVtRbZzDxglWInEOH5F7t+JGOKJbaBqCtPtwT0ALXDfhHW8IGqs8cCArGeQ=
+  strategy: git
+  app: immense-citadel-2006
