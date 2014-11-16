@@ -2,6 +2,8 @@
 $home = "/home/vagrant"
 $executes_as_vagrant = "sudo -u vagrant -H bash -l -c"
 
+$database = "mongodb"
+
 # Set default binary paths:
 Exec {
   path => [ "/usr/bin", "/usr/local/bin" ]
@@ -43,6 +45,20 @@ package { "memcached":
 
 package { "python-software-properties":
   ensure => "present"
+}
+
+#Install database
+case $database {
+	"mongodb" : {
+		class { "::mongodb::server":
+			auth => true,
+		}
+		mongodb::db { "app":
+			user => "root",
+			password => "root",
+			require => Class[ "::mongodb::server" ],
+		}
+	}
 }
 
 # Install Node.js and additional package dependencies:
